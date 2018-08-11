@@ -9,7 +9,10 @@ div {
     color: #777777;
     background-color: white;
 }
-
+.example-images{
+    width: 200px;
+    height: 200px;
+}
 .heading-block {
     border-color: #cccccc;
     color: #777777;
@@ -18,19 +21,19 @@ div {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: auto;
-    padding: 4px;
+    padding: 0px;
     height: 80pt;
     overflow: auto;
     position: absolute;
 }
 
-    
 .name {
+    border-radius: 5px;
     position: relative;
     float: left;
     background: #4aaaa5;
     color: white;
-    padding: 20pt;
+    height:80pt;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     width: 330px;
@@ -55,7 +58,7 @@ article {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     padding: 10px;
     color: #777777;
-    background-color:#ffffff;
+    background-color: #ffffff;
     border-color: #dddddd;
     border-radius: 15px;
     margin: 40pt;
@@ -65,7 +68,6 @@ article {
 
 .about {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-
     font-weight: bold;
     color: #4aaaa5;
     float: left;
@@ -76,8 +78,8 @@ article {
 
 .photo {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-max-width: 150px;
-max-height: 150px;
+    max-width: 150px;
+    max-height: 150px;
     float: left;
     margin: 15pt;
 }
@@ -127,6 +129,7 @@ a:active {
     color: #777777;
     text-decoration: none;
 }
+
 .footerClass {
     position: absolute;
     width: 100%;
@@ -135,10 +138,9 @@ a:active {
     bottom: -20px;
     text-align: center;
     color: #777777;
-
 }
 
-section{
+section {
     position: absolute;
     top: 200px;
     margin: auto;
