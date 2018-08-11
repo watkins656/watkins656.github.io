@@ -1,45 +1,64 @@
 <!-- TODO -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-            <link rel='stylesheet' type='text/css' href='css/style.css'>
-<title>Contact</title>
-    </head>
-    <body>
-        <section id ="headerid" class="header">
-            <section class="name">
-                Dustin Watkins
-            </section>
-            <section class="links">
-                <a href="index.html">About</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a>
-            </section>
-        </section>
-        <section class="contact">
-            <form>
-                <h2>Contact</h2>
+
+<head>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <title>Contact</title>
+</head>
+
+<body background="assets/images/qbkls.png">
+    <!-- Header -->
+
+    <div class="heading-block">
+
+        <header class="name">Dustin Watkins</header>
+        <nav class="navigationLinks">
+            <a href="index.html">About |</a>
+            <a href="portfolio.html"> Portfolio |</a>
+            <a href="contact.html"> Contact</a>
+        </nav>
+    </div>
+    <section class="contact">
+        <article>                <h2 class="card-header">Contact</h2>
+            <div style="clear: both;"></div>
                 <br>
-                <!-- TODO: horizontal line -->
+                <hr class="line">
+            <form id="contact-form">
+                <br> Name
                 <br>
-                Name
-                <br>
-                    <label="name">
-                        <input id="nameInput">
+                <label="name">
+                    <input class="contact-form" id="nameInput" value="John Smith">
 
                     </label>
+                    <br> Email
                     <br>
-                    Email
-                    <br>
-                    <label="email">
-                        <input id="emailInput">
+                    <label="email" >
+                        <input class="contact-form" id="emailInput" value="example@gmail.com">
 
-                    </label>
-<br>
-Message
-<br>
-<label>
-    <input id="messageInput">
-</label>
+                        </label>
+                        <br> Message
+                        <br>
+                        <label>
+                            <input class="contact-form" id="message-input">
+                        </label><br>
+
+                        <input id="submit-button" type="submit" value="Submit">
             </form>
-        </section>
-       </body>
+        </article>
+    </section>
+    <!-- Footer -->
+    <div id="green-line">
+        <br>hi</div>
+    <footer class="footerClass">
+        <br>
+        <br>
+        <div class="footerClass" id="footer-content">
+            Copyright
+            <i class="far fa-copyright"></i>2018
+
+        </div>
+    </footer>
+</body>
+
 </html>
