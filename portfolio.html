@@ -3,74 +3,108 @@
 <html lang="en">
 
 <head>
-    <link rel='stylesheet' type='text/css' href='css/style.css'>
-    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <title>Portfolio | Dustin Watkins</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/flip-card.css">
 </head>
 
-<body background="assets/images/qbkls.png">
+<body>
     <!-- Header -->
-    <div class="heading-block">
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo">Dustin Watkins</a>
+            <nav>
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-        <header class="name">Dustin Watkins</header>
-        <nav class="navigationLinks">
-            <a href="index.html">About |</a>
-            <a href="portfolio.html"> Portfolio |</a>
-            <a href="contact.html"> Contact</a>
-        </nav>
+    <div id="main-container" class="container">
+        <section class="main-section">
+            <h1>Portfolio</h1>
+            <a href="https://watkins656.github.io/Word-Guess-Game/">
+                <div class="work">
+                    <img src="assets/images/hanging.jpeg" alt="Word Guess">
+
+                    <h3>Word Guess</h3>
+                </div>
+            </a>
+            <a href="https://watkins656.github.io/Star-Fox-RPG/">
+                <div class="work">
+                    <img src="assets/images/adult-ancient-arena-289831.jpg" alt="RPG Game">
+
+                    <h3>RPG Game</h3>
+                </div>
+
+            </a> <a href="https://watkins656.github.io/TriviaGame/">
+                <div class="work">
+                    <img src="assets/images/ask-blackboard-356079.jpg" alt="Trivia Game">
+
+                    <h3>Trivia Game</h3>
+                </div>
+
+            </a> <a href="https://watkins656.github.io/group-project-1/">
+                <div class="work">
+                    <img src="assets/images/adolescent-adult-blur-933964.jpg" alt="National Parks Travel Guide">
+
+                    <h3>National Parks Travel Guide</h3>
+                </div>
+
+            </a> <a href="">
+                <div class="work">
+                    <img src="assets/images/close-up-close-up-fingers-1249214.jpg" alt="Rock Paper Scissors">
+
+                    <h3>Rock Paper Scissors</h3>
+                </div>
+
+            </a>
+            <div class="card-container">
+                <div class="card">
+                    <figure class="front">
+                        <img src="http://www.jboeijenga.nl/img/front.jpg" alt="front">
+                        <div class="caption">
+                            <h2>john <span>doe</span></h2>
+                            <p>web developer</p>
+                            <a href="#">View more</a>
+                        </div>
+                    </figure>
+
+                    <figure class="back">
+                        <img src="http://www.jboeijenga.nl/img/back.jpg" alt="back">
+                        <div class="caption">
+                            <dl>
+                                <dt>Phone</dt>
+                                <dd>012 345 6789</dd>
+                                <dt>Email</dt>
+                                <dd>johndoe@gmail.com</dd>
+                                <dt>Web</dt>
+                                <dd>www.johndoe.com</dd>
+                            </dl>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
     </div>
-    <section class="portfolio">
-        <article>
-            <h2 class="card-header">Portfolio</h2>
-            <div style="clear: both;"></div>
-            <br>
-            <hr class="line">
-            <div class="portfolio-image-wrapper">
-                <a href="https://github.com/watkins656" target="_blank">
-                    <img id='1' class="portfolio-item" max-width="200px" max-height="200px" src="assets/images/Octocat.png">
-                    <div class="portfolio-item-text">GitHub</div>
-                    <div style="clear: both;"></div>
-
-                </a>
-            </div>
-
-            <div class="portfolio-image-wrapper">
-                <a href="https://www.linkedin.com/in/dustin-watkins-789027167/">
-                    <img id='2' class="portfolio-item" src="assets/images/LinkedIn-Logo-R.png" max-width="200px" max-height="200px">
-                    <div class="portfolio-item-text">Linked In</div>
-                    <div style="clear: both;"></div>
-
-                </a>
-
-            </div>
-            <div class="portfolio-image-wrapper">
-                    <a href="https://scratch.mit.edu/users/watkins656/">
-                        <img id='3' class="portfolio-item" src="assets/images/scratch2.png" max-width="200px" max-height="200px">
-                        <div class="portfolio-item-text">Scratch</div>
-                        <div style="clear: both;"></div>
-    
-                    </a>
-                  
-            </div>
-        </article>
-
-    </section>
 
 
 
-    <!-- Footer -->
-
-    <div id="green-line">
-        <br>hi</div>
-    <footer class="footerClass">
-        <br>
-        <br>
-        <div class="footerClass" id="footer-content">
-            Copyright
-            <i class="far fa-copyright"></i>2018
-
+    <footer>
+        <div class="container">
+            Copyright &copy; 2018
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src='assets/javascript/card.js'></script>
 </body>
 
 </html>

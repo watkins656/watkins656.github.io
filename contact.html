@@ -1,64 +1,50 @@
-<!-- TODO -->
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-us">
 
 <head>
-    <link rel='stylesheet' type='text/css' href='css/style.css'>
-    <title>Contact</title>
+    <meta charset="UTF-8">
+    <title>Contact | Dustin Watkins</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body background="assets/images/qbkls.png">
-    <!-- Header -->
-
-    <div class="heading-block">
-
-        <header class="name">Dustin Watkins</header>
-        <nav class="navigationLinks">
-            <a href="index.html">About |</a>
-            <a href="portfolio.html"> Portfolio |</a>
-            <a href="contact.html"> Contact</a>
-        </nav>
-    </div>
-    <section class="contact">
-        <article>                <h2 class="card-header">Contact</h2>
-            <div style="clear: both;"></div>
-                <br>
-                <hr class="line">
-            <form id="contact-form">
-                <br> Name
-                <br>
-                <label="name">
-                    <input class="contact-form" id="nameInput" value="John Smith">
-
-                    </label>
-                    <br> Email
-                    <br>
-                    <label="email" >
-                        <input class="contact-form" id="emailInput" value="example@gmail.com">
-
-                        </label>
-                        <br> Message
-                        <br>
-                        <label>
-                            <input class="contact-form" id="message-input">
-                        </label><br>
-
-                        <input id="submit-button" type="submit" value="Submit">
-            </form>
-        </article>
-    </section>
-    <!-- Footer -->
-    <div id="green-line">
-        <br>hi</div>
-    <footer class="footerClass">
-        <br>
-        <br>
-        <div class="footerClass" id="footer-content">
-            Copyright
-            <i class="far fa-copyright"></i>2018
-
+<body>
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo">Your Name</a>
+            <nav>
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-    </footer>
-</body>
+    </header>
+
+    <div id="main-container" class="container">
+        <section class="main-section">
+            <h1>Contact</h1>
+
+            <form id="contact-form">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Smith" required="required">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required="required">
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required="required"></textarea>
+                    </li></ul>
+                    <input type="submit">
+                    </form>
+        </section></div>
+        <footer>
+                <div class="container">
+                    Copyright &copy; 2018
+                </div>
+            </footer>
+        </body>
 
 </html>
