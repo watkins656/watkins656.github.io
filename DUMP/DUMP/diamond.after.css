@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: url(../../assets/images/adventure-alpine-alps-416779.jpg);
+    background-size: cover;
+}
+
+.navbar{
+    position:fixed;
+    height: 100px;
+    width: 100%;
+    color: #233;
+    font-size: 40pt;
+    /* background: lightblue; */
+    display: flex;
+    justify-content: center;
+    line-height: 100px;
+font-family: 'Fredoka One', cursive;
+}
+.left-links, .right-links{
+    
+    display: flex;
+    justify-content: space-around;
+}
+.navbar a{
+    color: inherit;
+    text-decoration: none;
+}
+.profile-pic{
+    max-width: 100%;
+    max-height: 100px;
+}
+.wrapper {
+    width: 1200px;
+    height: 600px;
+    background: url(../../assets/images/Triangle.png);
+    background-position: center;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    width: 900px;
+    height: 600px;
+    overflow: visible;
+}
+
+ul li {
+    list-style: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    /* background: #000; */
+    margin: -100px;
+    transform: rotate(45deg);
+    transition: .5s;
+    overflow: hidden;
+}
+
+ul li.item1 {
+    bottom: 25%;
+    left: 16.66666666666666666666666666666666666666666666666666%;
+}
+
+ul li.item2 {
+    top: 50%;
+    left: 33.3333333333333333333333333333333333333333333333333333%;
+}
+
+ul li.item3 {
+    bottom: 25%;
+    left: 50%;
+}
+
+ul li.item4 {
+    top: 50%;
+    left: 66.66666666666666666666666666666666666666666666666666666666%;
+}
+
+ul li.item5 {
+    bottom: 25%;
+    left: 83.333333333333333333333333333333333333333333333333333333333%;
+}
+
+ul li.item6 {
+    top: 25%;
+    left: 50%;
+}
+
+ul li .bg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-45deg) scale(1.42)
+}
+
+ul li.item1 .bg {
+    background: url(../../assets/images/Project-Screenshots/NPS-Capture.PNG);
+    background-size: cover;
+}
+
+ul li.item2 .bg {
+    background: url(../../assets/images/Project-Screenshots/StarFox-Capture.PNG);
+    background-size: cover;
+}
+
+ul li.item3 .bg {
+    background: url(../../assets/images/Project-Screenshots/Bar-Trivia-Capture.PNG);
+    background-size: cover;
+}
+
+ul li.item4 .bg {
+    background: url(../../assets/images/Project-Screenshots/Hangman-Capture.PNG);
+    background-size: cover;
+}
+
+ul li.item5 .bg {
+    background: url(../../assets/images/Project-Screenshots/NPS-Capture.PNG);
+    background-size: cover;
+}
+
+ul li.item6 .bg {
+    background: url(../../assets/images/Project-Screenshots/NPS-Capture.PNG);
+    background-size: cover;
+}
+
+.gray{
+    width:100%;
+    height: 1000px;
+    background: #233;
+}

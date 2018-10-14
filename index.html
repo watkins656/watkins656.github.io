@@ -3,42 +3,135 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About | Dustin Watkins</title>
-    <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diamond Shape</title>
+    <!-- <link rel="stylesheet" href="DUMP/diamond.before.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel=" stylesheet" href="DUMP/diamond.after.1.css">
+    -->
 </head>
 
 <body>
+    <div class="background">
 
-    <!-- Header -->
-    <header id="masthead">
-        <div class="container" id='header-wrapper'>
-            <a href="index.html" id="logo">Dustin Watkins</a>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-                <a href="dump.html">Triangles</a>
-            </nav>
+        <div class="container navbar" id='navbar'>
+            <div class="left-links">
+                <div class="link">
+                    <a href="#">
+                        Home
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="#projects">
+                        Projects
+                    </a>
+                </div>
+            </div>
+            <div class="profile-pic"><img src="assets/images/profile-pic.png" alt="" srcset=""></div>
+            <div class="right-links">
+                <div class="link">
+                    <a href="#about">
+                        About Me
+                    </a>
+
+                </div>
+                <div class="link">
+                    <a href="#contact">
+                        Contact
+                    </a>
+
+                </div>
+            </div>
         </div>
-    </header>
-
-    <div id="main-container" class="container">
-        <section class="main-section">
-            <img class="auth-image" src="assets/images/FBProfilePic.jpg" alt="Dustin Watkins">
-<div id="quote">
-    Only when a man realizes his smallness, can his greatness appear.
-</div>
-
-                    </section>
+        <div class="mountain" id='projects'>
+            <ul>
+                <a href="https://github.com/watkins656/group-project-1">
+                    <li class="item1" id='small-diamond-national-parks'>
+                        <div class="bg"></div>
+                    </li>
+                </a>
+                <a href="https://github.com/watkins656/Star-Fox-RPG">
+                    <li class="item2" id='small-diamond-star-fox'>
+                        <div class="bg"></div>
+                    </li>
+                </a>
+                <a href="https://github.com/watkins656/TriviaGame">
+                    <li class="item3" id='small-diamond-trivia'>
+                        <div class="bg"></div>
+                    </li>
+                </a>
+                <a href="https://github.com/watkins656/Word-Guess-Game">
+                    <li class="item4" id='small-diamond-hangman'>
+                        <div class="bg"></div>
+                    </li>
+                </a>
+                <a href="https://github.com/watkins656/07-Train-Schedule">
+                    <li class="item5" id='small-diamond-train-schedule'>
+                        <div class="bg"></div>
+                    </li>
+                </a>
+                <!-- <li class="item6"><div class="bg">6</div></li> -->
+            </ul>
+        </div>
     </div>
-
-    <footer>
-        <div class="container">
-            Copyright &copy; 2018
+    <div class="gray-section">
+        <div id="about">
+My name is Dustin Watkins and I am a full-stack web developer.  I love to travel and I love helping people.  My ultimate goal is to use technology to help people who struggle in different aspects of life.  There is an exciting journey ahead for me, and I can only hope that our paths might cross.  
         </div>
-    </footer>
+        <div id="contact">
+            <form id="contact-form">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Smith" required="required">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required="required">
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required="required"></textarea>
+                    </li>
+                </ul>
 
+                <div class="button">
+                    <div class="text">Submit</div>
+                </div>
+                <div class="progress-bar"></div>
+                <svg x="0px" y="0px" viewBox="0 0 25 30" style="enable-background:new 0 0 25 30;">
+                    <path class="check" class="st0" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2" />
+                </svg>
+            </form>
+        </div>
+    
+    
+        <div class="footer" id='footer'>
+                <div class="left-links">
+                    <div class="link">
+                        <a href="#">
+                            Home
+                        </a>
+                    </div>
+                </div>
+                <div class="profile-pic"><img src="assets/images/profile-pic.png" alt="" srcset=""></div>
+                <div class="right-links">
+                    <div class="link">
+                        <a href="#contact">
+                            Contact
+                        </a>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+    <script src='assets/javascript/js.js'></script>
 </body>
 
 </html>
