@@ -84,8 +84,19 @@ var basicTimeline = anime.timeline({
   
   $(".button").click(function() {
     basicTimeline.play();
+    $('#form-inputs').hide();
+    
   });
   
   $(".text").click(function() {
     basicTimeline.play();
   });
+
+  $('#contact-form').hide();
+  $("#contact-me-button").click(function() {
+    $('#contact-me-button').hide();
+    $('#contact-form').show();
+
+
+  });
+
