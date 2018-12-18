@@ -25,10 +25,10 @@ body {
   font-family: 'Fredoka One', cursive;
   z-index: 1;
 }
-.scroll-navbar{
+
+.scroll-navbar {
   position: absolute;
   top: 416px;
-
 }
 
 .left-links, .right-links {
@@ -115,15 +115,13 @@ body {
 .mountain ul li .bg {
   width: 100%;
   height: 100%;
-  background-position: center; 
+  background-position: center;
   transform: rotate(-45deg) scale(1.42);
-   
 }
 
 .mountain ul li.item1 .bg {
   background: url(../../assets/images/Project-Screenshots/NPTG.jpg);
   background-size: cover;
-
 }
 
 .mountain ul li.item2 .bg {
@@ -156,29 +154,31 @@ body {
   height: 1000px;
   background: #272c36;
   margin-top: -5px;
+  padding-top: 80px;
   position: relative;
 }
 
-#contact{
+#contact {
   height: 250px;
   width: 100%;
   position: absolute;
   display: flex;
   justify-content: center;
-  
 }
-#contact-form{
+
+#contact-form {
   margin: 0 auto;
-  
 }
+
 .contact-text {
   margin: auto:
 }
 
-
 /* Contact Me Button */
+
 #contact-me-button {
   font: bold 1.25rem/1 poppins;
+  position: absolute;
   background: #e3e4e9;
   height: 80px;
   width: 200px;
@@ -192,6 +192,7 @@ body {
 }
 
 /* Submit Button */
+
 .button {
   background: #e3e4e9;
   height: 80px;
@@ -245,7 +246,8 @@ svg {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-.footer{
+
+.footer {
   position: absolute;
   bottom: 50px;
   height: 100px;
@@ -260,20 +262,41 @@ svg {
   z-index: 1;
 }
 
-#about{
+#about {
   justify-content: space-around;
   margin: 0 100px 0 100px;
-  display: flex; 
+  display: flex;
 }
-#about img{
 
-}
-#about p{
-  font-size:16pt;
-  width:  250px;
+#about img {}
+
+#about p {
+  font-size: 16pt;
+  width: 60%;
   float: right;
   line-height: 2;
-  margin: auto
-
+  margin: auto;
 }
 
+.big-item {
+  text-align: center;
+  padding-top: 800px;
+  color: white;
+  width: 1200px;
+  height: 600px;
+  background: url(../../assets/images/black-triangle.png);
+  background-position: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.big-item h3 {
+  font-size: 80px;
+}
+
+.big-item a {
+color: yellow;
+}
