@@ -1,12 +1,11 @@
 var navbar = $("#navbar");
 var background = $('.background');
+console.log('$(window).scrollTop');
 console.log($(window).scrollTop);
-$(window).scroll(function (e) {
-  console.log(background.scrolltop);
-
-
-});
 $(function () {
+  let scrollPosition = ($(this).scrollTop());
+  window.scrollTo(0, scrollPosition+1);
+
   $(window).scroll(function () {
     console.log($(this).scrollTop());
     if ($(this).scrollTop() > 322) {
@@ -24,13 +23,13 @@ $(function () {
   });
 });
 
-$(".diamond-item").hover(function () {
-  let project = ($(this).data('project'));
-  populateItem(project)
-  $(".big-item").show();
-}, function () {
-  return 0;
-});
+// $(".diamond-item").hover(function () {
+//   let project = ($(this).data('project'));
+//   populateItem(project)
+//   $(".big-item").show();
+// }, function () {
+//   return 0;
+// });
 function populateItem(project) {
   let currentProject;
   projects.forEach(element => {
@@ -70,7 +69,7 @@ let Project = function (title, deployedLink, githubLink, background) {
 }
 let hangman = new Project("Jungle Hangman", "https://watkins656.github.io/Word-Guess-Game/", "https://github.com/watkins656/Word-Guess-Game", "")
 let trivia = new Project("Bar Trivia", "https://watkins656.github.io/TriviaGame/", "https://github.com/watkins656/TriviaGame", "")
-let starFox = new Project("Star Fox RPG", "https://watkins656.github.io/Star-Fox-RPG/", "https://github.com/watkins656/Star-Fox-RPG", "")
+let starFox = new Project("Star Fox RPG", "https://watkins656.github.io/Star-Fox-RPG/", "https://github.com/watkins656/Star-Fox-RPG", "../../assets/images/Project-Screenshots/star-fox-backgrounds-20.jpg")
 let nationalParks = new Project("National Parks Travel Guide", "https://watkins656.github.io/group-project-1/", "https://github.com/watkins656/group-project-1", "")
 let trainSchedule = new Project("Train Scheduler", "https://watkins656.github.io/07-Train-Schedule/", "https://github.com/watkins656/07-Train-Schedule", "")
 let projects = [hangman, trivia, starFox, nationalParks, trainSchedule];
