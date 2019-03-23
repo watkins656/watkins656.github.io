@@ -53,13 +53,13 @@ function populateItem(project) {
 
 }
 
-$(".big-item").hover(function () {
-  $(".big-item").show();
-}, function () {
-  $(".big-item").empty();
-  $(".big-item").hide();
+// $(".big-item").hover(function () {
+//   $(".big-item").show();
+// }, function () {
+//   $(".big-item").empty();
+//   $(".big-item").hide();
 
-})
+// })
 
 let Project = function (title, deployedLink, githubLink, background) {
   this.title = title,
